@@ -26,7 +26,7 @@ void read_port(void)
 {
 	fd_set rd;
 	int nread,retval;
-	
+
 	struct timeval timeout;
 	FD_ZERO(&rd);
 	FD_SET(fd,&rd);
@@ -87,6 +87,13 @@ void wait_thread(void)
 
 int main()
 {
+	maintest();	
+}
+
+/*
+
+int main()
+{
 	//int fd = 0;
 	char buffer[BUFFER_SIEZE] = {0};
 
@@ -136,3 +143,5 @@ int main()
 	return 0;
  
 }
+
+*/
